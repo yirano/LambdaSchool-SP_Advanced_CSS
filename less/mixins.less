@@ -1,1 +1,18 @@
 // Mixins Here
+
+.padding(@top, @right, @bottom, @left) {
+	padding-top: @top~'px';
+	padding-right: @right~'px';
+	padding-bottom: @bottom~'px';
+	padding-left: @left~'px';
+}
+
+.flex-direction(@direction) {
+	display: flex;
+	flex-direction: @direction;
+}
+
+.btn(@bgColor, @fontColor) {
+	background-color: @bgColor;
+	color: @fontColor;
+}
